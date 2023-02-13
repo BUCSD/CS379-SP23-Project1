@@ -23,6 +23,10 @@ Model Update Feature:
 
 Implement a model update feature that updates the model using all the images available in each of the folders in the "Templates" folder.
 
+## Design
+
+You solution must follow object-oriented design. 
+
 ### Evaluation Criteria:
 Functionality: All required features should work as expected.
 
