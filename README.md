@@ -46,3 +46,23 @@ It is recommended to work in a team but working alone is also allowed.
 
 ### Use of ChatGPT or online sources
 You are allowed to use any resource you can find to complete the project. Just make sure you complete the requirements with the features requested. 
+
+
+### Step-by-step guide
+To create a python project that meets the requirements outlined in the description, follow these steps:
+
+Start by setting up your development environment. You will need to install Python and any necessary packages, such as OpenCV for computer vision and Pandas for data manipulation.
+
+Create a project directory, and within it, create a file called "main.py" that will serve as the entry point for your program.
+
+Implement the enroll feature. This should involve capturing images from the device's camera, requesting the person's name, creating a folder with that person's name within the "Templates" folder, and storing the images in the newly created folder. To retrain the face recognition model, you will need to use a library such as dlib or OpenCV.
+
+Implement the record attendance feature. This should run indefinitely and capture an image using the device's camera. The image should then be supplied to the trained model to generate the person's name. The person's name, date, and time should be recorded in the "attendance.csv" file. If the file does not exist, it should be created automatically.
+
+Implement the model update feature. This should update the model using all the images available in each of the folders in the "Templates" folder.
+
+Test your program to ensure that all features are working as expected.
+
+Write a report describing the process you went through in developing the project, including any challenges you encountered and how you overcame them.
+
+Submit your project for evaluation, keeping in mind the evaluation criteria listed in the description.
