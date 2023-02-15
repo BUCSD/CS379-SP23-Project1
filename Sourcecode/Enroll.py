@@ -1,0 +1,1 @@
+# This module is responsible to enroll new users in the system

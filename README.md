@@ -3,7 +3,7 @@ Face recognition based attendance system.
 
 
 ## Objective:
-The objective of this lab is to develop a Python project that simulates a facial recognition-based attendance system. The students will implement two key features: enroll and record attendance.
+The objective of this lab is to develop a Python project that simulates a facial recognition-based attendance system. The students will implement two key features: enroll new students, record attendance, and update the model from the already recognized students.
 
 ## Requirements:
 
@@ -16,10 +16,16 @@ Retrain the face recognition model for every new enrollment.
 ### Record Attendance Feature:
 The record attendance feature should run indefinitely unless someone stops it using a stop button.
 The feature should capture an image using the device's camera and supply the image to the trained model to generate the person's name.
-The person's name, date, and time should be recorded in the "attendance.csv" file.
+The person's name and date-time should be recorded in the "attendance.csv" file. The file will contain row as name of the users, and columns as the Present (Yes/No), and Date-time for each of the day attendance is being recorded for. For example, the file will look like below:
+
+Username, Present1, Date-time1, Present2, Date-time2, Present3, Date-time3, Present4, Date-time4...
+
+Rajesh Kumar, Yes, YY-MM-DD HH:MM:SS, Yes, YY-MM-DD HH:MM:SS, Yes, YY-MM-DD HH:MM:SS, ..., 
+
 If the "attendance.csv" file does not exist, the project should create it automatically.
 The captured images should be saved in the matching folder in the "Templates" folder.
-Model Update Feature:
+
+### Model Update Feature:
 
 Implement a model update feature that updates the model using all the images available in each of the folders in the "Templates" folder.
 
@@ -34,7 +40,9 @@ Accuracy: The model should generate the correct person's name.
 
 Error rate: The error rate should be minimized.
 
-Description/Report: A report of the process the students went through in developing the project should be provided.
+Description/Report: A report of the process the students went through in developing the project, what challenges they faced, how did they address those challenges should be provided.
+
+HowToRun.md: explain the steps that is needed to run the project.
 
 ### Team Work:
 
@@ -55,7 +63,9 @@ Start by setting up your development environment. You will need to install Pytho
 
 Create a project directory, and within it, create a file called "main.py" that will serve as the entry point for your program.
 
-Implement the enroll feature. This should involve capturing images from the device's camera, requesting the person's name, creating a folder with that person's name within the "Templates" folder, and storing the images in the newly created folder. To retrain the face recognition model, you will need to use a library such as dlib or OpenCV.
+Implement the enroll feature. This should involve capturing images from the device's camera, requesting the person's name, creating a folder with that person's name within the "Templates" folder, and storing the images in the newly created folder. I have put in two folders with dummy names User1 and User2, you should create folder with the name of the users automatically while enrolling so its easier to locate the folder and record the attendance. 
+
+To retrain the face recognition model, you will need to use a library such as dlib or OpenCV.
 
 Implement the record attendance feature. This should run indefinitely and capture an image using the device's camera. The image should then be supplied to the trained model to generate the person's name. The person's name, date, and time should be recorded in the "attendance.csv" file. If the file does not exist, it should be created automatically.
 
